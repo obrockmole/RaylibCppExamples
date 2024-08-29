@@ -8,8 +8,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(${PROJECT_NAME} src/main.cpp
         include/raylib_extras.hpp
-        src/mouse-collision.cpp
+        src/mouse_collision.cpp
         src/updating_text.cpp
+        src/sprite_movement.cpp
+        src/color_switch.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} raylib)
