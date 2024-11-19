@@ -2,6 +2,7 @@
 #include "updating_text.cpp"
 #include "sprite_movement.cpp"
 #include "color_switch.cpp"
+#include "game_of_life.cpp"
 
 int main() {
     enum Example {
@@ -13,7 +14,7 @@ int main() {
     };
 
     //Select which example to run
-    switch (Example targetExample = COLOR_SWITCH) {
+    switch (Example targetExample = GAME_OF_LIFE) {
         case MOUSE_COLLISION:
             runMouseCollision();
             break;
@@ -28,6 +29,10 @@ int main() {
 
         case COLOR_SWITCH:
             runColorSwitch();
+            break;
+
+        case GAME_OF_LIFE:
+            runGameOfLife();
             break;
     }
 }

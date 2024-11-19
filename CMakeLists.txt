@@ -12,6 +12,7 @@ add_executable(${PROJECT_NAME} src/main.cpp
         src/updating_text.cpp
         src/sprite_movement.cpp
         src/color_switch.cpp
+        src/game_of_life.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} raylib)
